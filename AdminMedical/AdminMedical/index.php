@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta http-equiv="refresh" content="0;url=pages/index.php">
-<title>SB Admin 2</title>
+<title>SB ADMIN 2</title>
 <script language="javascript">
-    window.location.href = "pages/index.php"
+     window.location.href = "pages/index.php"
 </script>
 </head>
 <body>
