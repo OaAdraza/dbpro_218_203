@@ -8,7 +8,7 @@ if (mysqli_connect_errno()) {
 } else {
 
     echo "successfully connect with Database";
-    session_start();
+
     ob_start();
 }
 ?>

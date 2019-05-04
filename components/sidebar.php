@@ -157,11 +157,25 @@
                     <ul class="thumbnails listing-products">
                         <li class="span3">
                             <div class="product-box">
-                                <span class="sale_tag"></span>
-                                <a href="product_detail.html"><img alt="" src="themes/images/ladies/7.jpg"></a><br/>
-                                <a href="product_detail.html" class="title">Fusce id molestie massa</a><br/>
-                                <a href="#" class="category">Suspendisse aliquet</a>
-                                <p class="price">$261</p>
+
+                                <?php
+                                $product = "Select * from product where product_name='medicines' LIMIT 4 OFFSET 0";
+                                $results = mysqli_query($con,$product);
+                                $row4 = mysqli_fetch_array($results);
+
+
+                                ?>  
+
+
+
+                              <a href="product_detail.php?p_id=<?= $row4['product_id'] ?>&sup_id=<?= $_GET['id'] ?>"><img alt="" src="<?= $row4['product_img1'] ?>"></a><br/>
+                                        <a href="product_detail.php?p_id=<?= $row8['product_id'] ?>&sup_id=<?= $_GET['id'] ?>" class="title"><?= $row4['product_name'] ?></a><br/>
+                                        <a href="#" class="category">FRIENDz</a>
+                                        <p><b>Medicine Name :  <?= $row4["medicine_name"] ?> </b></p>
+                                        <p><b>Quantity :  <?= $row4["qty"] ?> </b></p>
+                                        <p class="price">$<?= $row4['price'] ?></p>
+
+
                             </div>
                         </li>
                     </ul>
@@ -170,10 +184,25 @@
                     <ul class="thumbnails listing-products">
                         <li class="span3">
                             <div class="product-box">
-                                <a href="product_detail.html"><img alt="" src="themes/images/ladies/8.jpg"></a><br/>
-                                <a href="product_detail.html" class="title">Tempor sem sodales</a><br/>
-                                <a href="#" class="category">Urna nec lectus mollis</a>
-                                <p class="price">$134</p>
+
+                                <?php
+                                $product = "Select * from product where product_name='medicines' LIMIT 4 OFFSET 5";
+                                $results = mysqli_query($con,$product);
+                                $row4 = mysqli_fetch_array($results);
+
+
+                                ?>  
+
+
+
+                              <a href="product_detail.php?p_id=<?= $row4['product_id'] ?>&sup_id=<?= $_GET['id'] ?>"><img alt="" src="<?= $row4['product_img1'] ?>"></a><br/>
+                                        <a href="product_detail.php?p_id=<?= $row8['product_id'] ?>&sup_id=<?= $_GET['id'] ?>" class="title"><?= $row4['product_name'] ?></a><br/>
+                                        <a href="#" class="category">FRIENDz</a>
+                                        <p><b>Medicine Name :  <?= $row4["medicine_name"] ?> </b></p>
+                                        <p><b>Quantity :  <?= $row4["qty"] ?> </b></p>
+                                        <p class="price">$<?= $row4['price'] ?></p>
+
+
                             </div>
                         </li>
                     </ul>

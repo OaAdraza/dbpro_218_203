@@ -2,9 +2,7 @@
 <div id="top-bar" class="container">
     <div class="row">
         <div class="span4">
-            <form method="POST" class="search_form">
-                <input type="text" class="input-block-level search-query" Placeholder="eg. Bridal dress">
-            </form>
+          
         </div>
         <div class="span8">
             <div class="account pull-right">
@@ -42,7 +40,7 @@
 <div id="wrapper" class="container">
     <section class="navbar main-menu">
         <div class="navbar-inner main-menu">
-            <a href="index.php" class="logo pull-left"><img src="themes/images/logo.png" class="site_logo" alt=""></a>
+            <a href="index.php" class="logo pull-left"><img src="themes/images/cart.png" style="width: 20%;height: 40px;" class="site_logo" alt=""><SPAN style="color: Dodgerblue; font-size: 20px;">Medical</SPAN></a>
             <nav id="menu" class="pull-right">
                 <ul>
 

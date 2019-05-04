@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'components/connection.php';
 ?>
 <!DOCTYPE html>
@@ -68,7 +69,7 @@ require_once 'components/connection.php';
                                     <div class="active item">
                                         <ul class="thumbnails">
                                             <?php
-                                            $query34 = "Select * from product where product_name='medicines' LIMIT 4";
+                                            $query34 = "Select * from product where product_name='medicines' LIMIT 4 OFFSET 0";
                                             $result = mysqli_query($con, $query34);
                                             while ($row = mysqli_fetch_array($result)) {
                                                 ?>
@@ -79,6 +80,7 @@ require_once 'components/connection.php';
 
                                                         <p><a href="product_detail.php?p_id=<?= $row['product_id'] ?>"><img src="<?= $row['product_img1'] ?>" alt="" /></a></p>
                                                         <p class="title"><?= $row['product_name'] ?></p>
+                                                        <p> <b>product name: <?= $row['medicine_name'] ?></b></p>
                                                         <p> <b>Quantity: <?= $row['qty'] ?></b></p>
                                                         <p class="price">$<?= $row['price'] ?></p>
                                                     </div>
@@ -92,7 +94,7 @@ require_once 'components/connection.php';
                                     <div class="item">
                                         <ul class="thumbnails">
                                             <?php
-                                            $query39 = "Select * from product where product_name='shirts' LIMIT 4";
+                                            $query39 = "Select * from product where product_name='medicines' LIMIT 4 OFFSET 5";
                                             $result44 = mysqli_query($con, $query39);
                                             while ($row11 = mysqli_fetch_array($result44)) {
                                                 ?>
@@ -103,6 +105,7 @@ require_once 'components/connection.php';
 
                                                         <p><a href="product_detail.php?p_id=<?= $row11['product_id'] ?>"><img src="<?= $row11['product_img1'] ?>" alt="" /></a></p>
                                                         <p class="title"><?= $row11['product_name'] ?></p>
+                                                        <p> <b>product name: <?= $row['medicine_name'] ?></b></p>
                                                         <p> <b>Quantity: <?= $row11['qty'] ?></b></p>
                                                         <p class="price">$<?= $row11['price'] ?></p>
                                                     </div>
@@ -177,7 +180,7 @@ require_once 'components/connection.php';
                                     <div class="item">
                                         <ul class="thumbnails">
                                             <?php
-                                            $query3 = "Select * from product where product_name='Glasses' LIMIT 4";
+                                            $query3 = "Select * from product where product_name='medicines' LIMIT 4 OFFSET 10";
                                             $result4 = mysqli_query($con, $query3);
                                             while ($row1 = mysqli_fetch_array($result4)) {
                                                 ?>
@@ -188,6 +191,7 @@ require_once 'components/connection.php';
 
                                                         <p><a href="product_detail.php?p_id=<?= $row1['product_id'] ?>"><img src="<?= $row1['product_img1'] ?>" alt="" /></a></p>
                                                         <p class="title"><?= $row1['product_name'] ?></p>
+                                                        <p> <b>product name: <?= $row['medicine_name'] ?></b></p>
                                                         <p> <b>Quantity: <?= $row1['qty'] ?></b></p>
                                                         <p class="price">$<?= $row1['price'] ?></p>
                                                     </div>
@@ -215,7 +219,7 @@ require_once 'components/connection.php';
                                     <div class="active item">
                                         <ul class="thumbnails">
                                             <?php
-                                            $query8 = "Select * from product where product_name='Hand bags' LIMIT 4";
+                                            $query8 = "Select * from product where product_name='other Product' LIMIT 4 OFFSET 1";
                                             $result8 = mysqli_query($con, $query8);
                                             while ($row8 = mysqli_fetch_array($result8)) {
                                                 ?>
@@ -224,6 +228,7 @@ require_once 'components/connection.php';
                                                         <span class="sale_tag"></span>
                                                         <p><a href="product_detail.php?p_id=<?= $row8['product_id'] ?>"><img src="<?= $row8['product_img1'] ?>" alt="" /></a></p>
                                                         <p class="title"><?= $row8['product_name'] ?></p>
+                                                        <p> <b>product name: <?= $row['medicine_name'] ?></b></p>
                                                         <p> <b>Quantity: <?= $row8['qty'] ?></b></p>
                                                         <p class="price">$<?= $row8['price'] ?></p>
                                                     </div>
@@ -299,7 +304,7 @@ require_once 'components/connection.php';
                                     <div class="item">
                                         <ul class="thumbnails">
                                             <?php
-                                            $query5 = "Select * from product where  product_id >35 and product_id <40";
+                                            $query5 = "Select * from product where  product_name='other Product' LIMIT 4 OFFSET 14";
                                             $result5 = mysqli_query($con, $query5);
                                             while ($row5 = mysqli_fetch_array($result5)) {
                                                 ?>
@@ -308,6 +313,7 @@ require_once 'components/connection.php';
                                                         <span class="sale_tag"></span>
                                                         <p><a href="product_detail.php?p_id=<?= $row5['product_id'] ?>"><img src="<?= $row5['product_img1'] ?>" alt="" /></a></p>
                                                         <p class="title"><?= $row5['product_name'] ?></p>
+                                                        <p> <b>product name: <?= $row['medicine_name'] ?></b></p>
                                                         <p> <b>Quantity: <?= $row5['qty'] ?></b></p>
                                                         <p class="price">$<?= $row5['price'] ?></p>
                                                     </div>

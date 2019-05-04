@@ -51,16 +51,19 @@ if (isset($_REQUEST['save_data'])) {
                 <div class="span5">
                     <div>
 
-                        <h5>ADDITIONAL INFORMATION</h5>
+                        <h5>Pharmacies INFORMATION</h5>
                         <?php
                         $query = " SELECT * FROM add_information";
                         $result = mysqli_query($con, $query);
                         if (mysqli_num_rows($result) > 0) {
                             foreach ($result as $row) {
                                 ?>
-                                <p><strong>Phone:</strong>&nbsp; <?= $row['phone'] ?><br>
+                                <p><strong>Name:</strong>&nbsp; <?= $row['Pharmacy_name'] ?><br>
+                                    <strong>Phone:</strong>&nbsp; <?= $row['phone'] ?><br>
                                     <strong>Fax:</strong>&nbsp; <?= $row['fax'] ?><br>
-                                    <strong>Email:</strong>&nbsp;<a href="#"> <?= $row['email'] ?></a>
+                                    <strong>Email:</strong>&nbsp;<a href="#"> <?= $row['email'] ?></a><br>
+                                    <strong>Address:</strong>&nbsp; <?= $row['Address'] ?><br>
+
                                 </p>
                                 <?php
                             }
@@ -85,7 +88,7 @@ if (isset($_REQUEST['save_data'])) {
                     </div>
                 </div>
                 <div class="span7">
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                   
                     <form method="post" action="#">
                         <fieldset>
                             <div class="clearfix">

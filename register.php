@@ -1,5 +1,7 @@
 <?php
+
 require_once 'components/connection.php';
+session_start();
 if (isset($_SESSION['USERID'])) {
     header("location:index.php");
 } else {
@@ -7,7 +9,7 @@ if (isset($_SESSION['USERID'])) {
         $email = $_REQUEST['username'];
         $pass = $_REQUEST['password'];
         $query = "SELECT * FROM register_form where reg_name=" . " '$email' and reg_password=" . " '$pass' ";
-//        die($query);
+       //die($query);
 	$que = "select * from register_form";
 	$pa = mysqli_query($con,$que);
 	$row = mysqli_fetch_array($pa);

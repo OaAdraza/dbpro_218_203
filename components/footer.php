@@ -14,19 +14,18 @@
         <div class="span4">
             <h4>My Account</h4>
             <ul class="nav">
-                <li><a href="#">My Account</a></li>
-                <li><a href="#">Order History</a></li>
-                <li><a href="#">Wish List</a></li>
-                <li><a href="#">Newsletter</a></li>
+                <li><a href="login.php">My Account</a></li>
+                <li><a href="cart.php">Order History</a></li>
+                <li><a href="contact.php">pharmacy List</a></li>
             </ul>
         </div>
         <div class="span5">
-            <p class="logo"><img src="themes/images/logo.png" class="site_logo" alt=""></p>
+            <p class="logo"><a href="index.php"><img src="themes/images/cart.png" style="width: 20%;height: 40px;" class="site_logo" alt=""><SPAN style="color: Dodgerblue; font-size: 20px;">Medical</SPAN></a></p>
 
             <span class="social_icons">
-                <a class="facebook" href="#">Facebook</a>
-                <a class="twitter" href="#">Twitter</a>
-                <a class="skype" href="#">Skype</a>
+                <a class="facebook" href="www.facebook.com">Facebook</a>
+                <a class="twitter" href="www.twitter.com">Twitter</a>
+                <a class="skype" href="www.skype.com">Skype</a>
             </span>
         </div>
     </div>
