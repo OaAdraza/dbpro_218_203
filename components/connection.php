@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect("localhost", "root", "", "medical");
+$con = mysqli_connect("localhost", "root", "", "db2");
 
 if (mysqli_connect_errno()) {
 
